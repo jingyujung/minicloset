@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -34,7 +35,7 @@ import java.util.Date;
  */
 
 public class ForecastFragment extends Fragment {
-
+    TextView textview;
     ArrayList<String> list;
     CustomAdapter forecastAdapter = null;
 
@@ -43,12 +44,7 @@ public class ForecastFragment extends Fragment {
 
         list = new ArrayList<>();
         list.add("");
-        list.add("");
-        list.add("");
-        list.add("");
-        list.add("");
-        list.add("");
-        list.add("");
+
     }
 
     @Override
@@ -117,7 +113,7 @@ public class ForecastFragment extends Fragment {
 
             String format = "json";
             String units = "metric";
-            int numDays = 7;
+            int numDays = 1;
 
 
             try {
@@ -243,6 +239,7 @@ public class ForecastFragment extends Fragment {
      * Fortunately parsing is easy:  constructor takes the JSON string and converts it
      * into an Object hierarchy for us.
      */
+    static String weather="";
     public static String[] getWeatherDataFromJson(String forecastJsonStr, int numDays)
             throws JSONException {
 
@@ -259,7 +256,7 @@ public class ForecastFragment extends Fragment {
         JSONArray weatherArray = forecastJson.getJSONArray(OWM_LIST);
 
         String[] resultStrs = new String[numDays];
-        for(int i = 0; i < weatherArray.length(); i++) {
+        for(int i = 0; i < 1; i++) {
             // For now, using the format "Day, description, hi/low"
             String day;
             String description;
@@ -286,6 +283,9 @@ public class ForecastFragment extends Fragment {
 
             highAndLow = formatHighLows(high, low);
             resultStrs[i] = day + " - " + description + " - " + highAndLow;
+            if(i==0){
+                weather = description;
+            }
         }
 
         return resultStrs;

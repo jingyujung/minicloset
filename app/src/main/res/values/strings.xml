@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Myminicloset</string>
+    <string name="app_name">미니 옷장</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Setting</string>
     <string name="action_refreshing">Refreshing</string>

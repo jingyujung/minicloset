@@ -1,24 +1,28 @@
 package gdgssu.myminicloset;
 
 import android.app.Activity;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import java.io.File;
 
 
-public class MainActivity extends Activity {
-
+public class MainActivity extends FragmentActivity {
 
     File pathTop, pathBot, pathTopInfo, pathBotInfo;
     File pathRoot;
 
-    Button btnCloset, btnWeather;
+    ImageView btnCloset, btnWeather;
+    ImageView icoWeather, icoCloset, icoDP, icoExit;
 
 
 
@@ -27,9 +31,10 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         mkdir();
         init();
-
 
 
 
@@ -61,8 +66,13 @@ public class MainActivity extends Activity {
     }
 
     private void init() {
-        btnCloset = (Button)findViewById(R.id.btnCloth);
-        btnWeather = (Button)findViewById(R.id.btnWeather);
+
+        btnCloset = (ImageView)findViewById(R.id.btnCloth);
+        btnWeather = (ImageView)findViewById(R.id.btnWeather);
+        icoCloset = (ImageView)findViewById(R.id.icoCloset);
+        icoDP = (ImageView)findViewById(R.id.icoDP);
+        icoExit = (ImageView)findViewById(R.id.icoExit);
+        icoWeather = (ImageView)findViewById(R.id.icoWeather);
 
 
         btnCloset.setOnClickListener(new View.OnClickListener() {
@@ -76,6 +86,34 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), WeatherActivity.class));
+            }
+        });
+
+        icoWeather.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), WeatherActivity.class));
+            }
+        });
+
+        icoCloset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), ClosetActivity.class));
+            }
+        });
+
+        icoExit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+        icoDP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
     }

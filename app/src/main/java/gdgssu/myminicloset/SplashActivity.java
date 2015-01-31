@@ -12,7 +12,7 @@ import java.util.TimerTask;
  * Created by JinGyu on 2015-01-22.
  */
 public class SplashActivity extends Activity {
-    private long splashDelay = 1000;
+    private long splashDelay = 1500;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

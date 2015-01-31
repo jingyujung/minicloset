@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -7,24 +7,63 @@
     android:background="@drawable/myroom"
     android:orientation="vertical">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:id="@+id/btnWeather"
-        android:text="날씨"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:src="@drawable/touch"
+        android:layout_below="@+id/btnCloth" />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:id="@+id/btnCloth"
-        android:text="옷장"/>
-    <Button
-        android:layout_width="wrap_content"
+        android:src="@drawable/touch"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/btnWeather" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnAdd"
-        android:text="옷추가"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnCodi"
-        android:text="추천"/>
-</LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/icoWeather"
+            android:src="@drawable/weatherico"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/btnAdd"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="bottom|center_horizontal" />
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/icoCloset"
+            android:src="@drawable/closetico"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/btnWeather"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="bottom|center_horizontal" />
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/icoDP"
+            android:src="@drawable/dpico"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/btnCloth"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="bottom|center_horizontal" />
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/icoExit"
+            android:src="@drawable/exitico"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="bottom|center_horizontal" />
+
+        </LinearLayout>
+
+
+</RelativeLayout>
