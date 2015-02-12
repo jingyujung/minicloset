@@ -14,13 +14,18 @@ import java.util.TimerTask;
 public class SplashActivity extends Activity {
     private long splashDelay = 1500;
 
+    public static WeatherActivity weatherActivity;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
 
+
         // Remove title bar
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+
 
         // Remove notification bar
         /*

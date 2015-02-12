@@ -34,7 +34,10 @@ import java.util.Date;
  * A placeholder fragment containing a simple view.
  */
 
+
 public class ForecastFragment extends Fragment {
+
+
     TextView textview;
     ArrayList<String> list;
     CustomAdapter forecastAdapter = null;
@@ -285,9 +288,13 @@ public class ForecastFragment extends Fragment {
             resultStrs[i] = day + " - " + description + " - " + highAndLow;
             if(i==0){
                 weather = description;
+
             }
         }
 
         return resultStrs;
     }
+
+
+
 }

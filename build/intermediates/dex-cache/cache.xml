@@ -2,39 +2,39 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\JinGyu\Documents\minicloset\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jar="E:\minicloset\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="C:\Users\JinGyu\Documents\minicloset\app\build\intermediates\pre-dexed\debug\classes-440cbffdcd5521020e04d16a070038dc333035d5.jar" />
+        <dex dex="E:\minicloset\app\build\intermediates\pre-dexed\debug\classes-f5d6dea89b1279680d67efe74df15a2040f6f5ca.jar" />
     </item>
     <item
-        jar="C:\Users\JinGyu\Documents\minicloset\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jar="E:\minicloset\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="C:\Users\JinGyu\Documents\minicloset\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-c8fb7543449b19ee3179475093f6118ea4364458.jar" />
-    </item>
-    <item
-        jar="C:\Users\JinGyu\Documents\minicloset\app\libs\volley.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="67dca93186288eb3a71cc3dbaa8db76c8b5d249a">
-        <dex dex="C:\Users\JinGyu\Documents\minicloset\app\build\intermediates\pre-dexed\debug\volley-2fc96b5fe4fab6af5ea3970ef75e5441de9bcc77.jar" />
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="E:\minicloset\app\build\intermediates\pre-dexed\debug\classes-e07e1fa73c236d6205723d15ffb52003fb57da37.jar" />
     </item>
     <item
         jar="E:\android-sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="C:\Users\JinGyu\Documents\minicloset\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-fffc2a1bc5d2ab1c49e83b1b719c2ea78965eab9.jar" />
+        <dex dex="E:\minicloset\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-fffc2a1bc5d2ab1c49e83b1b719c2ea78965eab9.jar" />
     </item>
     <item
-        jar="C:\Users\JinGyu\Documents\minicloset\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jar="E:\minicloset\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="C:\Users\JinGyu\Documents\minicloset\app\build\intermediates\pre-dexed\debug\classes-aea96eb768e44e66f5e1bfd27958395e61f0dc61.jar" />
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="E:\minicloset\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-764711642bca22a3bbe09c86795238e7f2acb69a.jar" />
+    </item>
+    <item
+        jar="E:\minicloset\app\libs\volley.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="67dca93186288eb3a71cc3dbaa8db76c8b5d249a">
+        <dex dex="E:\minicloset\app\build\intermediates\pre-dexed\debug\volley-287dc4516d8cb14d72ca8ba359be5842627e4e5b.jar" />
     </item>
 
 </items>
