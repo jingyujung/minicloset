@@ -1,5 +1,6 @@
 package gdgssu.myminicloset;
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -28,7 +29,7 @@ public class ClosetActivity extends Activity {
     Bitmap[] topImages;
     Bitmap[] botImages;
 
-    Button btnRandom, btnReset;
+    Button btnRandom, btnReset,plus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,16 +42,7 @@ public class ClosetActivity extends Activity {
         topImages = new Bitmap[topImageFiles.length];
         botImages = new Bitmap[botImageFiles.length];
 
-        for(int i = 0 ; i < topImageFiles.length; i++)
-        {
-            Log.v("ClosetActivity",""+topImageFiles[i].getAbsolutePath());
-            topImages[i] = BitmapFactory.decodeFile(topImageFiles[i].getAbsolutePath());
-        }
 
-        for(int i = 0 ; i < botImageFiles.length; i++)
-        {
-            botImages[i] = BitmapFactory.decodeFile(botImageFiles[i].getAbsolutePath());
-        }
 
         init();
 
@@ -59,6 +51,7 @@ public class ClosetActivity extends Activity {
     private void init() {
         btnRandom = (Button)findViewById(R.id.btnRandom);
         btnReset = (Button)findViewById(R.id.btnReset);
+        plus = (Button)findViewById(R.id.plus);
         maneTop = (ImageView)findViewById(R.id.avataTop);
         maneBot = (ImageView)findViewById(R.id.avataBot);
         topList = (ListView)findViewById(R.id.listTopImage);
@@ -97,6 +90,12 @@ public class ClosetActivity extends Activity {
                 int bot = (int)(Math.random()*1000)%botImages.length;
                 maneBot.setImageBitmap(botImages[bot]);
 
+            }
+        });
+        plus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), CameraActivity.class));
             }
         });
 

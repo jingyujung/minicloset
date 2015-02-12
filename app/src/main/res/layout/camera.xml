@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Camera 연동 테스트 프로그램"
+        android:id="@+id/textView">
+    </TextView>
+    <Button
+        android:id="@+id/btn_click_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click camera"
+        android:layout_marginTop="93dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true">
+    </Button>
+
+    <Button
+        android:id="@+id/btn_click_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click gallery"
+        android:layout_below="@+id/btn_click_camera"
+        android:layout_alignStart="@+id/btn_click_camera">
+    </Button>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/btn_click_gallery">
+
+    </ImageView>
+</RelativeLayout>
